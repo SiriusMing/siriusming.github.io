@@ -65,9 +65,47 @@
                 transform: translateY(100%);
             }
         }
+
+        /* 目录样式 */
+        .menu {
+            margin-bottom: 20px;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .menu ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .menu ul li a {
+            color: #333;
+            text-decoration: none;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .menu ul li a:hover {
+            background-color: #f0f0f0;
+        }
     </style>
 </head>
 <body>
+    <!-- 目录 -->
+    <div class="menu">
+        <ul>
+            <li><a href="#home">主页</a></li>
+            <li><a href="#about">关于我</a></li>
+            <li><a href="#blog">博客</a></li>
+            <li><a href="#contact">联系方式</a></li>
+        </ul>
+    </div>
+
+    <!-- 内容 -->
     <div class="container">
         <h1>欢迎来到明明的个人网站</h1>
         <p>你好，米娜桑！欢迎来到我的个人网站。</p>
@@ -83,6 +121,28 @@
         <img src="https://cdn.jsdelivr.net/gh/Ukenn2112/UkennWeb@3.0/assets/sakura4.png" alt="樱花">
         <img src="https://cdn.jsdelivr.net/gh/Ukenn2112/UkennWeb@3.0/assets/sakura5.png" alt="樱花">
     </div>
+
+    <!-- 索引页 -->
+    <div class="container" id="home">
+        <h2>主页</h2>
+        <p>欢迎来到我的主页！</p>
+    </div>
+
+    <div class="container" id="about">
+        <h2>关于我</h2>
+        <p>我是明明，一个热爱编程、喜欢学习新知识的人。</p>
+    </div>
+
+    <div class="container" id="blog">
+        <h2>博客</h2>
+        <p>这里将会是我分享技术和生活的地方。</p>
+    </div>
+
+    <div class="container" id="contact">
+        <h2>联系方式</h2>
+        <p>你可以通过电子邮件联系我：example@example.com</p>
+    </div>
 </body>
 </html>
+
 
